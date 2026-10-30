@@ -22,7 +22,7 @@ def create_ticket():
     user_ticket["Ticket Number"] = ticket_number
     print(f"Ticket created successfully! Your ticket number is: {ticket_number}")
     all_user_tickets.append(user_ticket)
-    with open("./ASSESSMENT/tickets.txt", "a") as file:
+    with open("tickets.txt", "a") as file:
         file.write(f"{user_ticket}\n")
     #print(all_user_tickets)
     #print(f"Ticket details: {user_ticket}")

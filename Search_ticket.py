@@ -9,7 +9,7 @@ def search_ticket():
         print("Invalid ticket ID. Please enter a valid integer.")
         return
     #Name_of_requester = input("Please enter the name of the ticket requester: ")
-    if not os.path.exists("./ASSESSMENT/tickets.txt"):
+    if not os.path.exists("tickets.txt"):
         print("No tickets found.")
         return
     with open("./ASSESSMENT/tickets.txt", "r") as file:

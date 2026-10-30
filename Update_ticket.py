@@ -19,7 +19,7 @@ def update_ticket():
     all_tickets = []
 
     #Read all tickets
-    with open("./ASSESSMENT/tickets.txt", "r") as file:
+    with open("tickets.txt", "r") as file:
         for line in file:
             if line.strip():
                 ticket = ast.literal_eval(line.strip())
@@ -42,7 +42,7 @@ def update_ticket():
 
     #  Save the tickets if a match was found
     if ticket_found:
-        with open("./ASSESSMENT/tickets.txt", "w") as file:
+        with open("tickets.txt", "w") as file:
             for ticket in all_tickets:
                 file.write(str(ticket) + "\n")
 
