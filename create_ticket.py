@@ -60,8 +60,8 @@ def create_ticket():
     print(f"\nTicket created successfully! Your ticket number is: {ticket_number}")
     return user_ticket
 
-
-if __name__ == "__main__":
-    new_ticket = create_ticket()
-    print("\nReturned ticket record:")
-    print(new_ticket)
+create_ticket()
+#if __name__ == "__main__":
+#    new_ticket = create_ticket()
+#    print("\nReturned ticket record:")
+#    print(new_ticket)
