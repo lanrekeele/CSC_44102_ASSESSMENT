@@ -23,4 +23,4 @@ def view_all_tickets():
         ticket_details = eval(ticket.strip())
         print(eval(ticket.strip()))
 
-view_all_tickets()
+#view_all_tickets()

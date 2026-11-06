@@ -19,4 +19,4 @@ def search_ticket():
                 print(f"Ticket details: {ticket}")
                 return
     print("No Ticket with this Ticket ID exists.")
-search_ticket()
+#search_ticket()
