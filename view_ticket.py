@@ -3,7 +3,7 @@ import os
 # This function views all ticket saved in the ticket.txt file.
 # It reads from the ticket.xt file line by line and prints the ticket details for each ticket found in the file.
 def view_all_tickets():
-    filename = "./ASSESSMENT/tickets.txt"
+    filename = "./tickets.txt"
 
     # Lets check if the file exist
     if not os.path.exists(filename):
@@ -23,4 +23,4 @@ def view_all_tickets():
         ticket_details = eval(ticket.strip())
         print(eval(ticket.strip()))
 
-#view_tickets()
+view_all_tickets()
