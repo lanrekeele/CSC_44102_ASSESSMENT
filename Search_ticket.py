@@ -9,14 +9,14 @@ def search_ticket():
         print("Invalid ticket ID. Please enter a valid integer.")
         return
     #Name_of_requester = input("Please enter the name of the ticket requester: ")
-    if not os.path.exists("./ASSESSMENT/tickets.txt"):
+    if not os.path.exists("./tickets.txt"):
         print("No tickets found.")
         return
-    with open("./ASSESSMENT/tickets.txt", "r") as file:
+    with open("./tickets.txt", "r") as file:
         for line in file:
             ticket = eval(line.strip())
             if int(ticket["Ticket Number"]) == ticket_ID:
                 print(f"Ticket details: {ticket}")
                 return
     print("No Ticket with this Ticket ID exists.")
-#search_ticket()
+search_ticket()
